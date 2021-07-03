@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/scroll_marginHorizontal"
+        android:layout_marginTop="@dimen/scroll_marginTop"
+        android:background="@drawable/form_bg">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/inner_scroll_margin">
+
+            <ImageView
+                android:id="@+id/cross"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/cross" />
+
+            <ImageView
+                android:id="@+id/userLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cross"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/userLogo_TopMargin"
+                android:src="@drawable/user_logo" />
+
+            <TextView
+                android:id="@+id/form_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userLogo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/heading_margin"
+                android:text="@string/form_heading"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/heading_TextSize"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/form_option"
+                android:layout_below="@id/form_heading"
+                android:text="@string/title_option" />
+
+
+            <TextView
+                android:id="@+id/firstName"
+                style="@style/form_option"
+                android:layout_below="@id/title"
+                android:text="@string/first_name_option" />
+
+
+            <TextView
+                android:id="@+id/lastName"
+                style="@style/form_option"
+                android:layout_below="@id/firstName"
+                android:text="@string/last_name_option" />
+
+            <TextView
+                android:id="@+id/email"
+                style="@style/form_option"
+                android:layout_below="@id/lastName"
+                android:text="@string/work_email_option" />
+
+            <Spinner
+                android:id="@+id/spinner_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/form_heading"
+                android:layout_alignRight="@id/title"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/spinner_leftMargin"
+                android:layout_marginTop="@dimen/form_topMargin"
+                android:layout_marginRight="@dimen/spinner_rightMargin"
+                android:background="@drawable/form_bg"
+                android:padding="@dimen/form_padding" />
+
+
+            <EditText
+                android:id="@+id/enter_firstName"
+                style="@style/form_field"
+                android:layout_below="@id/title"
+                android:layout_toRightOf="@id/firstName"
+                android:hint="@string/first_name_hint" />
+
+
+            <EditText
+                android:id="@+id/enter_secondName"
+
+                style="@style/form_field"
+                android:layout_below="@id/firstName"
+                android:layout_toRightOf="@id/lastName"
+
+                android:hint="@string/enter_second_name_hint" />
+
+
+            <EditText
+                android:id="@+id/enter_email"
+                style="@style/form_field"
+                android:layout_below="@id/lastName"
+
+                android:layout_toRightOf="@id/email"
+
+                android:hint="@string/enter_email_hint" />
+
+
+            <ImageView
+                style="@style/star"
+                android:layout_alignTop="@id/firstName"
+                android:layout_toRightOf="@id/firstName" />
+
+            <ImageView
+                style="@style/star"
+                android:layout_alignTop="@id/lastName"
+                android:layout_toRightOf="@id/lastName" />
+
+            <ImageView
+                style="@style/star"
+                android:layout_alignTop="@id/email"
+                android:layout_toRightOf="@id/email" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@id/enter_email"
+                android:layout_marginLeft="@dimen/notice_leftMargin"
+                android:layout_marginTop="@dimen/notice_topMargin"
+                android:text="(This is also us as Login for MASAI)"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/form_text_size" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

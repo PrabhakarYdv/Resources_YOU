@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Resources_YOU</string>
+    <string name="form_heading">Add New Employee</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="first_name_option">First Name :</string>
+    <string name="title_option">Title :</string>
+    <string name="last_name_option">Last Name :</string>
+    <string name="work_email_option">Work Email :</string>
+    <string name="enter_second_name_hint">Second Name</string>
+    <string name="enter_email_hint">example@mail.com</string>
+    <string-array name="title_list">
+        <item>Select Option</item>
+        <item>Mr.</item>
+        <item>Mrs.</item>
+        <item>Miss.</item>
+        <item>Other</item>
+
+    </string-array>
+</resources>

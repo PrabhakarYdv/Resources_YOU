@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="form_field">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/form_leftMargin</item>
+        <item name="android:layout_marginTop">@dimen/form_topMargin</item>
+        <item name="android:layout_marginRight">@dimen/form_right_margin</item>
+        <item name="android:background">@drawable/form_bg</item>
+        <item name="android:padding">@dimen/form_padding</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textSize">@dimen/form_text_size</item>
+        <item name="android:layout_alignParentRight">true</item>
+
+    </style>
+
+    <style name="form_option">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/form_leftMargin</item>
+        <item name="android:layout_marginTop">@dimen/form_topMargin</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textSize">@dimen/option_textSize</item>
+
+    </style>
+
+    <style name="star">
+        <item name="android:layout_width">@dimen/star_width</item>
+        <item name="android:layout_height">@dimen/star_height</item>
+        <item name="android:src">@mipmap/star_mark</item>
+    </style>
+
+
+</resources>
